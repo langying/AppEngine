@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		387CD81A8879C4E8EDA771AE /* libPods-AppEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB7BDA4EC60A2C39D5FA609 /* libPods-AppEngine.a */; };
+		D41E94011E38E4EB0095E05D /* AppEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E93FF1E38E4EB0095E05D /* AppEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D41E94ED1E38E5610095E05D /* duk_config.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E942F1E38E5600095E05D /* duk_config.h */; };
+		D41E94EE1E38E5610095E05D /* duktape.c in Sources */ = {isa = PBXBuildFile; fileRef = D41E94301E38E5600095E05D /* duktape.c */; };
+		D41E94EF1E38E5610095E05D /* duktape.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E94311E38E5600095E05D /* duktape.h */; };
+		D41E95221E38E5610095E05D /* AECanvasRenderingContext2DBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D41E946A1E38E5600095E05D /* AECanvasRenderingContext2DBean.cpp */; };
+		D41E95231E38E5610095E05D /* AECanvasRenderingContext2DBean.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D41E946B1E38E5600095E05D /* AECanvasRenderingContext2DBean.hpp */; };
+		D41E95241E38E5610095E05D /* AECanvasRenderingContext2DBean.mm in Sources */ = {isa = PBXBuildFile; fileRef = D41E946C1E38E5600095E05D /* AECanvasRenderingContext2DBean.mm */; };
+		D41E95251E38E5610095E05D /* AEHTMLImageElementBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D41E946D1E38E5600095E05D /* AEHTMLImageElementBean.cpp */; };
+		D41E95261E38E5610095E05D /* AEHTMLImageElementBean.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D41E946E1E38E5600095E05D /* AEHTMLImageElementBean.hpp */; };
+		D41E95271E38E5610095E05D /* AEHTMLImageElementBean.mm in Sources */ = {isa = PBXBuildFile; fileRef = D41E946F1E38E5600095E05D /* AEHTMLImageElementBean.mm */; };
+		D41E95281E38E5610095E05D /* AEPlatform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D41E94701E38E5600095E05D /* AEPlatform.cpp */; };
+		D41E95291E38E5610095E05D /* AEPlatform.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D41E94711E38E5600095E05D /* AEPlatform.hpp */; };
+		D41E952A1E38E5610095E05D /* AEPlatform.mm in Sources */ = {isa = PBXBuildFile; fileRef = D41E94721E38E5600095E05D /* AEPlatform.mm */; };
+		D41E952B1E38E5610095E05D /* AESoundBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D41E94731E38E5600095E05D /* AESoundBean.cpp */; };
+		D41E952C1E38E5610095E05D /* AESoundBean.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D41E94741E38E5600095E05D /* AESoundBean.hpp */; };
+		D41E952D1E38E5610095E05D /* AESoundBean.mm in Sources */ = {isa = PBXBuildFile; fileRef = D41E94751E38E5600095E05D /* AESoundBean.mm */; };
+		D41E952E1E38E5610095E05D /* AESpeechSynthesisBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D41E94761E38E5600095E05D /* AESpeechSynthesisBean.cpp */; };
+		D41E952F1E38E5610095E05D /* AESpeechSynthesisBean.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D41E94771E38E5600095E05D /* AESpeechSynthesisBean.hpp */; };
+		D41E95301E38E5610095E05D /* AESpeechSynthesisBean.mm in Sources */ = {isa = PBXBuildFile; fileRef = D41E94781E38E5600095E05D /* AESpeechSynthesisBean.mm */; };
+		D41E95311E38E5610095E05D /* AEHTMLVideoElementBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D41E94791E38E5600095E05D /* AEHTMLVideoElementBean.cpp */; };
+		D41E95321E38E5610095E05D /* AEHTMLVideoElementBean.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D41E947A1E38E5600095E05D /* AEHTMLVideoElementBean.hpp */; };
+		D41E95331E38E5610095E05D /* AEHTMLVideoElementBean.mm in Sources */ = {isa = PBXBuildFile; fileRef = D41E947B1E38E5600095E05D /* AEHTMLVideoElementBean.mm */; };
+		D41E95341E38E5610095E05D /* AEView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D41E947C1E38E5600095E05D /* AEView.cpp */; };
+		D41E95351E38E5610095E05D /* AEView.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E947D1E38E5600095E05D /* AEView.h */; };
+		D41E95361E38E5610095E05D /* AEView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D41E947E1E38E5600095E05D /* AEView.mm */; };
+		D41E95371E38E5610095E05D /* AEVRDisplayBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D41E947F1E38E5600095E05D /* AEVRDisplayBean.cpp */; };
+		D41E95381E38E5610095E05D /* AEVRDisplayBean.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D41E94801E38E5600095E05D /* AEVRDisplayBean.hpp */; };
+		D41E95391E38E5610095E05D /* AEVRDisplayBean.mm in Sources */ = {isa = PBXBuildFile; fileRef = D41E94811E38E5600095E05D /* AEVRDisplayBean.mm */; };
+		D41E953A1E38E5610095E05D /* AEWebSocketBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D41E94821E38E5600095E05D /* AEWebSocketBean.cpp */; };
+		D41E953B1E38E5610095E05D /* AEWebSocketBean.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D41E94831E38E5600095E05D /* AEWebSocketBean.hpp */; };
+		D41E953C1E38E5610095E05D /* AEWebSocketBean.mm in Sources */ = {isa = PBXBuildFile; fileRef = D41E94841E38E5600095E05D /* AEWebSocketBean.mm */; };
+		D41E953D1E38E5610095E05D /* AEXMLHttpRequestBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D41E94851E38E5600095E05D /* AEXMLHttpRequestBean.cpp */; };
+		D41E953E1E38E5610095E05D /* AEXMLHttpRequestBean.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D41E94861E38E5600095E05D /* AEXMLHttpRequestBean.hpp */; };
+		D41E953F1E38E5610095E05D /* AEXMLHttpRequestBean.mm in Sources */ = {isa = PBXBuildFile; fileRef = D41E94871E38E5600095E05D /* AEXMLHttpRequestBean.mm */; };
+		D41E95401E38E5610095E05D /* AEJNI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D41E94891E38E5600095E05D /* AEJNI.cpp */; };
+		D41E95411E38E5610095E05D /* AEJNI.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D41E948A1E38E5600095E05D /* AEJNI.hpp */; };
+		D41E957B1E38E5610095E05D /* AppEngine.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D41E94CA1E38E5610095E05D /* AppEngine.bundle */; };
+		D4343E901E38E74A00CBC286 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4343E8F1E38E74A00CBC286 /* AVFoundation.framework */; };
+		D4343E921E38E75900CBC286 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4343E911E38E75900CBC286 /* OpenAL.framework */; };
+		D4343E941E38E79800CBC286 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4343E931E38E79800CBC286 /* AudioToolbox.framework */; };
+		D4343E961E38E7A600CBC286 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4343E951E38E7A600CBC286 /* CoreGraphics.framework */; };
+		D4343E981E38E7C500CBC286 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4343E971E38E7C500CBC286 /* OpenGLES.framework */; };
+		D4343E9A1E38E7DC00CBC286 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4343E991E38E7DC00CBC286 /* CoreMedia.framework */; };
+		D4343E9C1E38E7F400CBC286 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4343E9B1E38E7F400CBC286 /* CoreMotion.framework */; };
+		D458DED51E4601FE00196998 /* AEManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DEB01E4601FE00196998 /* AEManager.cpp */; };
+		D458DED61E4601FE00196998 /* AEManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEB11E4601FE00196998 /* AEManager.hpp */; };
+		D458DED71E4601FE00196998 /* AECanvasRenderingContext2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DEB31E4601FE00196998 /* AECanvasRenderingContext2D.cpp */; };
+		D458DED81E4601FE00196998 /* AECanvasRenderingContext2D.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEB41E4601FE00196998 /* AECanvasRenderingContext2D.hpp */; };
+		D458DED91E4601FE00196998 /* AEHTMLImageElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DEB51E4601FE00196998 /* AEHTMLImageElement.cpp */; };
+		D458DEDA1E4601FE00196998 /* AEHTMLImageElement.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEB61E4601FE00196998 /* AEHTMLImageElement.hpp */; };
+		D458DEDB1E4601FE00196998 /* AEHTMLVideoElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DEB71E4601FE00196998 /* AEHTMLVideoElement.cpp */; };
+		D458DEDC1E4601FE00196998 /* AEHTMLVideoElement.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEB81E4601FE00196998 /* AEHTMLVideoElement.hpp */; };
+		D458DEDD1E4601FE00196998 /* AEImageData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DEB91E4601FE00196998 /* AEImageData.cpp */; };
+		D458DEDE1E4601FE00196998 /* AEImageData.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEBA1E4601FE00196998 /* AEImageData.hpp */; };
+		D458DEDF1E4601FE00196998 /* AESound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DEBB1E4601FE00196998 /* AESound.cpp */; };
+		D458DEE01E4601FE00196998 /* AESound.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEBC1E4601FE00196998 /* AESound.hpp */; };
+		D458DEE11E4601FE00196998 /* AESpeechSynthesis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DEBD1E4601FE00196998 /* AESpeechSynthesis.cpp */; };
+		D458DEE21E4601FE00196998 /* AESpeechSynthesis.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEBE1E4601FE00196998 /* AESpeechSynthesis.hpp */; };
+		D458DEE31E4601FE00196998 /* AEVRDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DEBF1E4601FE00196998 /* AEVRDisplay.cpp */; };
+		D458DEE41E4601FE00196998 /* AEVRDisplay.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEC01E4601FE00196998 /* AEVRDisplay.hpp */; };
+		D458DEE51E4601FE00196998 /* AEWebGLRenderingContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DEC11E4601FE00196998 /* AEWebGLRenderingContext.cpp */; };
+		D458DEE61E4601FE00196998 /* AEWebGLRenderingContext.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEC21E4601FE00196998 /* AEWebGLRenderingContext.hpp */; };
+		D458DEE71E4601FE00196998 /* AEWebSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DEC31E4601FE00196998 /* AEWebSocket.cpp */; };
+		D458DEE81E4601FE00196998 /* AEWebSocket.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEC41E4601FE00196998 /* AEWebSocket.hpp */; };
+		D458DEE91E4601FE00196998 /* AEXMLHttpRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DEC51E4601FE00196998 /* AEXMLHttpRequest.cpp */; };
+		D458DEEA1E4601FE00196998 /* AEXMLHttpRequest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEC61E4601FE00196998 /* AEXMLHttpRequest.hpp */; };
+		D458DEEB1E4601FE00196998 /* AELoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DEC81E4601FE00196998 /* AELoop.cpp */; };
+		D458DEEC1E4601FE00196998 /* AELoop.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEC91E4601FE00196998 /* AELoop.hpp */; };
+		D458DEED1E4601FE00196998 /* AEPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DECA1E4601FE00196998 /* AEPool.cpp */; };
+		D458DEEE1E4601FE00196998 /* AEPool.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DECB1E4601FE00196998 /* AEPool.hpp */; };
+		D458DEEF1E4601FE00196998 /* AETimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DECC1E4601FE00196998 /* AETimer.cpp */; };
+		D458DEF01E4601FE00196998 /* AETimer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DECD1E4601FE00196998 /* AETimer.hpp */; };
+		D458DEF11E4601FE00196998 /* AEBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DECF1E4601FE00196998 /* AEBase.cpp */; };
+		D458DEF21E4601FE00196998 /* AEBase.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DED01E4601FE00196998 /* AEBase.hpp */; };
+		D458DEF31E4601FE00196998 /* AEFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DED11E4601FE00196998 /* AEFormat.cpp */; };
+		D458DEF41E4601FE00196998 /* AEFormat.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DED21E4601FE00196998 /* AEFormat.hpp */; };
+		D458DEF51E4601FE00196998 /* AEURL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D458DED31E4601FE00196998 /* AEURL.cpp */; };
+		D458DEF61E4601FE00196998 /* AEURL.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DED41E4601FE00196998 /* AEURL.hpp */; };
+		D458DF091E46034800196998 /* AEAudioEngine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEF91E46034800196998 /* AEAudioEngine.hpp */; };
+		D458DF0A1E46034800196998 /* AEAudioEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = D458DEFA1E46034800196998 /* AEAudioEngine.mm */; };
+		D458DF0B1E46034800196998 /* AEHTMLVideoElementImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = D458DEFB1E46034800196998 /* AEHTMLVideoElementImpl.h */; };
+		D458DF0C1E46034800196998 /* AEHTMLVideoElementImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = D458DEFC1E46034800196998 /* AEHTMLVideoElementImpl.mm */; };
+		D458DF0D1E46034800196998 /* AEURLCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D458DEFD1E46034800196998 /* AEURLCache.h */; };
+		D458DF0E1E46034800196998 /* AEURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D458DEFE1E46034800196998 /* AEURLCache.m */; };
+		D458DF0F1E46034800196998 /* AEVRDisplayImpl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D458DEFF1E46034800196998 /* AEVRDisplayImpl.hpp */; };
+		D458DF101E46034800196998 /* AEVRDisplayImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = D458DF001E46034800196998 /* AEVRDisplayImpl.mm */; };
+		D458DF111E46034800196998 /* AEAGLContext.h in Headers */ = {isa = PBXBuildFile; fileRef = D458DF021E46034800196998 /* AEAGLContext.h */; };
+		D458DF121E46034800196998 /* AEAGLContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = D458DF031E46034800196998 /* AEAGLContext.mm */; };
+		D458DF131E46034800196998 /* AECameraTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = D458DF041E46034800196998 /* AECameraTexture.h */; };
+		D458DF141E46034800196998 /* AECameraTexture.mm in Sources */ = {isa = PBXBuildFile; fileRef = D458DF051E46034800196998 /* AECameraTexture.mm */; };
+		D458DF151E46034800196998 /* AEVideoTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = D458DF061E46034800196998 /* AEVideoTexture.h */; };
+		D458DF161E46034800196998 /* AEVideoTexture.mm in Sources */ = {isa = PBXBuildFile; fileRef = D458DF071E46034800196998 /* AEVideoTexture.mm */; };
+		D4B6F52B1E554C3300A1B6D6 /* AEEuler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4B6F51D1E554C3300A1B6D6 /* AEEuler.cpp */; };
+		D4B6F52C1E554C3300A1B6D6 /* AEEuler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D4B6F51E1E554C3300A1B6D6 /* AEEuler.hpp */; };
+		D4B6F52D1E554C3300A1B6D6 /* AEMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4B6F51F1E554C3300A1B6D6 /* AEMath.cpp */; };
+		D4B6F52E1E554C3300A1B6D6 /* AEMath.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D4B6F5201E554C3300A1B6D6 /* AEMath.hpp */; };
+		D4B6F52F1E554C3300A1B6D6 /* AEMatrix3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4B6F5211E554C3300A1B6D6 /* AEMatrix3.cpp */; };
+		D4B6F5301E554C3300A1B6D6 /* AEMatrix3.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D4B6F5221E554C3300A1B6D6 /* AEMatrix3.hpp */; };
+		D4B6F5311E554C3300A1B6D6 /* AEMatrix4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4B6F5231E554C3300A1B6D6 /* AEMatrix4.cpp */; };
+		D4B6F5321E554C3300A1B6D6 /* AEMatrix4.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D4B6F5241E554C3300A1B6D6 /* AEMatrix4.hpp */; };
+		D4B6F5331E554C3300A1B6D6 /* AEQuaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4B6F5251E554C3300A1B6D6 /* AEQuaternion.cpp */; };
+		D4B6F5341E554C3300A1B6D6 /* AEQuaternion.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D4B6F5261E554C3300A1B6D6 /* AEQuaternion.hpp */; };
+		D4B6F5351E554C3300A1B6D6 /* AEVector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4B6F5271E554C3300A1B6D6 /* AEVector3.cpp */; };
+		D4B6F5361E554C3300A1B6D6 /* AEVector3.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D4B6F5281E554C3300A1B6D6 /* AEVector3.hpp */; };
+		D4B6F5371E554C3300A1B6D6 /* AEVector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4B6F5291E554C3300A1B6D6 /* AEVector4.cpp */; };
+		D4B6F5381E554C3300A1B6D6 /* AEVector4.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D4B6F52A1E554C3300A1B6D6 /* AEVector4.hpp */; };
+		D4BA68EB1E3904EF00E2182F /* player.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4BA68EA1E3904EF00E2182F /* player.bundle */; };
+		D4D0A4C11E485B0100A02FFD /* AEHTMLAudioElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D0A4BF1E485B0100A02FFD /* AEHTMLAudioElement.cpp */; };
+		D4D0A4C21E485B0100A02FFD /* AEHTMLAudioElement.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D4D0A4C01E485B0100A02FFD /* AEHTMLAudioElement.hpp */; };
+		D4D0A4C61E485B0F00A02FFD /* AEHTMLAudioElementBean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D0A4C31E485B0F00A02FFD /* AEHTMLAudioElementBean.cpp */; };
+		D4D0A4C71E485B0F00A02FFD /* AEHTMLAudioElementBean.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D4D0A4C41E485B0F00A02FFD /* AEHTMLAudioElementBean.hpp */; };
+		D4D0A4C81E485B0F00A02FFD /* AEHTMLAudioElementBean.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4D0A4C51E485B0F00A02FFD /* AEHTMLAudioElementBean.mm */; };
+		D4D0A4CB1E48605D00A02FFD /* AEHTMLAudioElementImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D0A4C91E48605D00A02FFD /* AEHTMLAudioElementImpl.h */; };
+		D4D0A4CC1E48605D00A02FFD /* AEHTMLAudioElementImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4D0A4CA1E48605D00A02FFD /* AEHTMLAudioElementImpl.mm */; };
+		D4F34DCC1E5DD582004ED03C /* AEFloodFill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4F34DCA1E5DD582004ED03C /* AEFloodFill.cpp */; };
+		D4F34DCD1E5DD582004ED03C /* AEFloodFill.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D4F34DCB1E5DD582004ED03C /* AEFloodFill.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ADB7BDA4EC60A2C39D5FA609 /* libPods-AppEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppEngine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C0797FDA2A2136E082C006 /* Pods-AppEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppEngine/Pods-AppEngine.release.xcconfig"; sourceTree = "<group>"; };
+		D41E93FC1E38E4EB0095E05D /* AppEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41E93FF1E38E4EB0095E05D /* AppEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppEngine.h; sourceTree = "<group>"; };
+		D41E94001E38E4EB0095E05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41E942F1E38E5600095E05D /* duk_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = duk_config.h; sourceTree = "<group>"; };
+		D41E94301E38E5600095E05D /* duktape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = duktape.c; sourceTree = "<group>"; };
+		D41E94311E38E5600095E05D /* duktape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = duktape.h; sourceTree = "<group>"; };
+		D41E946A1E38E5600095E05D /* AECanvasRenderingContext2DBean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AECanvasRenderingContext2DBean.cpp; sourceTree = "<group>"; };
+		D41E946B1E38E5600095E05D /* AECanvasRenderingContext2DBean.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AECanvasRenderingContext2DBean.hpp; sourceTree = "<group>"; };
+		D41E946C1E38E5600095E05D /* AECanvasRenderingContext2DBean.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AECanvasRenderingContext2DBean.mm; sourceTree = "<group>"; };
+		D41E946D1E38E5600095E05D /* AEHTMLImageElementBean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEHTMLImageElementBean.cpp; sourceTree = "<group>"; };
+		D41E946E1E38E5600095E05D /* AEHTMLImageElementBean.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEHTMLImageElementBean.hpp; sourceTree = "<group>"; };
+		D41E946F1E38E5600095E05D /* AEHTMLImageElementBean.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEHTMLImageElementBean.mm; sourceTree = "<group>"; };
+		D41E94701E38E5600095E05D /* AEPlatform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEPlatform.cpp; sourceTree = "<group>"; };
+		D41E94711E38E5600095E05D /* AEPlatform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEPlatform.hpp; sourceTree = "<group>"; };
+		D41E94721E38E5600095E05D /* AEPlatform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEPlatform.mm; sourceTree = "<group>"; };
+		D41E94731E38E5600095E05D /* AESoundBean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AESoundBean.cpp; sourceTree = "<group>"; };
+		D41E94741E38E5600095E05D /* AESoundBean.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AESoundBean.hpp; sourceTree = "<group>"; };
+		D41E94751E38E5600095E05D /* AESoundBean.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AESoundBean.mm; sourceTree = "<group>"; };
+		D41E94761E38E5600095E05D /* AESpeechSynthesisBean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AESpeechSynthesisBean.cpp; sourceTree = "<group>"; };
+		D41E94771E38E5600095E05D /* AESpeechSynthesisBean.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AESpeechSynthesisBean.hpp; sourceTree = "<group>"; };
+		D41E94781E38E5600095E05D /* AESpeechSynthesisBean.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AESpeechSynthesisBean.mm; sourceTree = "<group>"; };
+		D41E94791E38E5600095E05D /* AEHTMLVideoElementBean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEHTMLVideoElementBean.cpp; sourceTree = "<group>"; };
+		D41E947A1E38E5600095E05D /* AEHTMLVideoElementBean.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEHTMLVideoElementBean.hpp; sourceTree = "<group>"; };
+		D41E947B1E38E5600095E05D /* AEHTMLVideoElementBean.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEHTMLVideoElementBean.mm; sourceTree = "<group>"; };
+		D41E947C1E38E5600095E05D /* AEView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEView.cpp; sourceTree = "<group>"; };
+		D41E947D1E38E5600095E05D /* AEView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEView.h; sourceTree = "<group>"; };
+		D41E947E1E38E5600095E05D /* AEView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEView.mm; sourceTree = "<group>"; };
+		D41E947F1E38E5600095E05D /* AEVRDisplayBean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEVRDisplayBean.cpp; sourceTree = "<group>"; };
+		D41E94801E38E5600095E05D /* AEVRDisplayBean.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEVRDisplayBean.hpp; sourceTree = "<group>"; };
+		D41E94811E38E5600095E05D /* AEVRDisplayBean.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEVRDisplayBean.mm; sourceTree = "<group>"; };
+		D41E94821E38E5600095E05D /* AEWebSocketBean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEWebSocketBean.cpp; sourceTree = "<group>"; };
+		D41E94831E38E5600095E05D /* AEWebSocketBean.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEWebSocketBean.hpp; sourceTree = "<group>"; };
+		D41E94841E38E5600095E05D /* AEWebSocketBean.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEWebSocketBean.mm; sourceTree = "<group>"; };
+		D41E94851E38E5600095E05D /* AEXMLHttpRequestBean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEXMLHttpRequestBean.cpp; sourceTree = "<group>"; };
+		D41E94861E38E5600095E05D /* AEXMLHttpRequestBean.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEXMLHttpRequestBean.hpp; sourceTree = "<group>"; };
+		D41E94871E38E5600095E05D /* AEXMLHttpRequestBean.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEXMLHttpRequestBean.mm; sourceTree = "<group>"; };
+		D41E94891E38E5600095E05D /* AEJNI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEJNI.cpp; sourceTree = "<group>"; };
+		D41E948A1E38E5600095E05D /* AEJNI.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEJNI.hpp; sourceTree = "<group>"; };
+		D41E94CA1E38E5610095E05D /* AppEngine.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppEngine.bundle; sourceTree = "<group>"; };
+		D4343E8F1E38E74A00CBC286 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D4343E911E38E75900CBC286 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		D4343E931E38E79800CBC286 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D4343E951E38E7A600CBC286 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D4343E971E38E7C500CBC286 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D4343E991E38E7DC00CBC286 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D4343E9B1E38E7F400CBC286 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D458DEB01E4601FE00196998 /* AEManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEManager.cpp; sourceTree = "<group>"; };
+		D458DEB11E4601FE00196998 /* AEManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEManager.hpp; sourceTree = "<group>"; };
+		D458DEB31E4601FE00196998 /* AECanvasRenderingContext2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AECanvasRenderingContext2D.cpp; sourceTree = "<group>"; };
+		D458DEB41E4601FE00196998 /* AECanvasRenderingContext2D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AECanvasRenderingContext2D.hpp; sourceTree = "<group>"; };
+		D458DEB51E4601FE00196998 /* AEHTMLImageElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEHTMLImageElement.cpp; sourceTree = "<group>"; };
+		D458DEB61E4601FE00196998 /* AEHTMLImageElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEHTMLImageElement.hpp; sourceTree = "<group>"; };
+		D458DEB71E4601FE00196998 /* AEHTMLVideoElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEHTMLVideoElement.cpp; sourceTree = "<group>"; };
+		D458DEB81E4601FE00196998 /* AEHTMLVideoElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEHTMLVideoElement.hpp; sourceTree = "<group>"; };
+		D458DEB91E4601FE00196998 /* AEImageData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEImageData.cpp; sourceTree = "<group>"; };
+		D458DEBA1E4601FE00196998 /* AEImageData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEImageData.hpp; sourceTree = "<group>"; };
+		D458DEBB1E4601FE00196998 /* AESound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AESound.cpp; sourceTree = "<group>"; };
+		D458DEBC1E4601FE00196998 /* AESound.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AESound.hpp; sourceTree = "<group>"; };
+		D458DEBD1E4601FE00196998 /* AESpeechSynthesis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AESpeechSynthesis.cpp; sourceTree = "<group>"; };
+		D458DEBE1E4601FE00196998 /* AESpeechSynthesis.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AESpeechSynthesis.hpp; sourceTree = "<group>"; };
+		D458DEBF1E4601FE00196998 /* AEVRDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEVRDisplay.cpp; sourceTree = "<group>"; };
+		D458DEC01E4601FE00196998 /* AEVRDisplay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEVRDisplay.hpp; sourceTree = "<group>"; };
+		D458DEC11E4601FE00196998 /* AEWebGLRenderingContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEWebGLRenderingContext.cpp; sourceTree = "<group>"; };
+		D458DEC21E4601FE00196998 /* AEWebGLRenderingContext.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEWebGLRenderingContext.hpp; sourceTree = "<group>"; };
+		D458DEC31E4601FE00196998 /* AEWebSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEWebSocket.cpp; sourceTree = "<group>"; };
+		D458DEC41E4601FE00196998 /* AEWebSocket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEWebSocket.hpp; sourceTree = "<group>"; };
+		D458DEC51E4601FE00196998 /* AEXMLHttpRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEXMLHttpRequest.cpp; sourceTree = "<group>"; };
+		D458DEC61E4601FE00196998 /* AEXMLHttpRequest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEXMLHttpRequest.hpp; sourceTree = "<group>"; };
+		D458DEC81E4601FE00196998 /* AELoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AELoop.cpp; sourceTree = "<group>"; };
+		D458DEC91E4601FE00196998 /* AELoop.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AELoop.hpp; sourceTree = "<group>"; };
+		D458DECA1E4601FE00196998 /* AEPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEPool.cpp; sourceTree = "<group>"; };
+		D458DECB1E4601FE00196998 /* AEPool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEPool.hpp; sourceTree = "<group>"; };
+		D458DECC1E4601FE00196998 /* AETimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AETimer.cpp; sourceTree = "<group>"; };
+		D458DECD1E4601FE00196998 /* AETimer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AETimer.hpp; sourceTree = "<group>"; };
+		D458DECF1E4601FE00196998 /* AEBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEBase.cpp; sourceTree = "<group>"; };
+		D458DED01E4601FE00196998 /* AEBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEBase.hpp; sourceTree = "<group>"; };
+		D458DED11E4601FE00196998 /* AEFormat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEFormat.cpp; sourceTree = "<group>"; };
+		D458DED21E4601FE00196998 /* AEFormat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEFormat.hpp; sourceTree = "<group>"; };
+		D458DED31E4601FE00196998 /* AEURL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEURL.cpp; sourceTree = "<group>"; };
+		D458DED41E4601FE00196998 /* AEURL.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEURL.hpp; sourceTree = "<group>"; };
+		D458DEF91E46034800196998 /* AEAudioEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEAudioEngine.hpp; sourceTree = "<group>"; };
+		D458DEFA1E46034800196998 /* AEAudioEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEAudioEngine.mm; sourceTree = "<group>"; };
+		D458DEFB1E46034800196998 /* AEHTMLVideoElementImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEHTMLVideoElementImpl.h; sourceTree = "<group>"; };
+		D458DEFC1E46034800196998 /* AEHTMLVideoElementImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEHTMLVideoElementImpl.mm; sourceTree = "<group>"; };
+		D458DEFD1E46034800196998 /* AEURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEURLCache.h; sourceTree = "<group>"; };
+		D458DEFE1E46034800196998 /* AEURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEURLCache.m; sourceTree = "<group>"; };
+		D458DEFF1E46034800196998 /* AEVRDisplayImpl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEVRDisplayImpl.hpp; sourceTree = "<group>"; };
+		D458DF001E46034800196998 /* AEVRDisplayImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEVRDisplayImpl.mm; sourceTree = "<group>"; };
+		D458DF021E46034800196998 /* AEAGLContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAGLContext.h; sourceTree = "<group>"; };
+		D458DF031E46034800196998 /* AEAGLContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEAGLContext.mm; sourceTree = "<group>"; };
+		D458DF041E46034800196998 /* AECameraTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AECameraTexture.h; sourceTree = "<group>"; };
+		D458DF051E46034800196998 /* AECameraTexture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AECameraTexture.mm; sourceTree = "<group>"; };
+		D458DF061E46034800196998 /* AEVideoTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEVideoTexture.h; sourceTree = "<group>"; };
+		D458DF071E46034800196998 /* AEVideoTexture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEVideoTexture.mm; sourceTree = "<group>"; };
+		D4B6F51D1E554C3300A1B6D6 /* AEEuler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEEuler.cpp; sourceTree = "<group>"; };
+		D4B6F51E1E554C3300A1B6D6 /* AEEuler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEEuler.hpp; sourceTree = "<group>"; };
+		D4B6F51F1E554C3300A1B6D6 /* AEMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEMath.cpp; sourceTree = "<group>"; };
+		D4B6F5201E554C3300A1B6D6 /* AEMath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEMath.hpp; sourceTree = "<group>"; };
+		D4B6F5211E554C3300A1B6D6 /* AEMatrix3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEMatrix3.cpp; sourceTree = "<group>"; };
+		D4B6F5221E554C3300A1B6D6 /* AEMatrix3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEMatrix3.hpp; sourceTree = "<group>"; };
+		D4B6F5231E554C3300A1B6D6 /* AEMatrix4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEMatrix4.cpp; sourceTree = "<group>"; };
+		D4B6F5241E554C3300A1B6D6 /* AEMatrix4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEMatrix4.hpp; sourceTree = "<group>"; };
+		D4B6F5251E554C3300A1B6D6 /* AEQuaternion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEQuaternion.cpp; sourceTree = "<group>"; };
+		D4B6F5261E554C3300A1B6D6 /* AEQuaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEQuaternion.hpp; sourceTree = "<group>"; };
+		D4B6F5271E554C3300A1B6D6 /* AEVector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEVector3.cpp; sourceTree = "<group>"; };
+		D4B6F5281E554C3300A1B6D6 /* AEVector3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEVector3.hpp; sourceTree = "<group>"; };
+		D4B6F5291E554C3300A1B6D6 /* AEVector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEVector4.cpp; sourceTree = "<group>"; };
+		D4B6F52A1E554C3300A1B6D6 /* AEVector4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEVector4.hpp; sourceTree = "<group>"; };
+		D4BA68EA1E3904EF00E2182F /* player.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = player.bundle; sourceTree = "<group>"; };
+		D4D0A4BF1E485B0100A02FFD /* AEHTMLAudioElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEHTMLAudioElement.cpp; sourceTree = "<group>"; };
+		D4D0A4C01E485B0100A02FFD /* AEHTMLAudioElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEHTMLAudioElement.hpp; sourceTree = "<group>"; };
+		D4D0A4C31E485B0F00A02FFD /* AEHTMLAudioElementBean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEHTMLAudioElementBean.cpp; sourceTree = "<group>"; };
+		D4D0A4C41E485B0F00A02FFD /* AEHTMLAudioElementBean.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEHTMLAudioElementBean.hpp; sourceTree = "<group>"; };
+		D4D0A4C51E485B0F00A02FFD /* AEHTMLAudioElementBean.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEHTMLAudioElementBean.mm; sourceTree = "<group>"; };
+		D4D0A4C91E48605D00A02FFD /* AEHTMLAudioElementImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEHTMLAudioElementImpl.h; sourceTree = "<group>"; };
+		D4D0A4CA1E48605D00A02FFD /* AEHTMLAudioElementImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AEHTMLAudioElementImpl.mm; sourceTree = "<group>"; };
+		D4F34DCA1E5DD582004ED03C /* AEFloodFill.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEFloodFill.cpp; sourceTree = "<group>"; };
+		D4F34DCB1E5DD582004ED03C /* AEFloodFill.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AEFloodFill.hpp; sourceTree = "<group>"; };
+		F3A6DB2FE80424128175222E /* Pods-AppEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppEngine/Pods-AppEngine.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D41E93F81E38E4EA0095E05D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4343E9C1E38E7F400CBC286 /* CoreMotion.framework in Frameworks */,
+				D4343E9A1E38E7DC00CBC286 /* CoreMedia.framework in Frameworks */,
+				D4343E981E38E7C500CBC286 /* OpenGLES.framework in Frameworks */,
+				D4343E961E38E7A600CBC286 /* CoreGraphics.framework in Frameworks */,
+				D4343E941E38E79800CBC286 /* AudioToolbox.framework in Frameworks */,
+				D4343E921E38E75900CBC286 /* OpenAL.framework in Frameworks */,
+				D4343E901E38E74A00CBC286 /* AVFoundation.framework in Frameworks */,
+				387CD81A8879C4E8EDA771AE /* libPods-AppEngine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		896042D5544518D72BB9E110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3A6DB2FE80424128175222E /* Pods-AppEngine.debug.xcconfig */,
+				C8C0797FDA2A2136E082C006 /* Pods-AppEngine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D41E93F21E38E4EA0095E05D = {
+			isa = PBXGroup;
+			children = (
+				D41E93FE1E38E4EB0095E05D /* AppEngine */,
+				D41E93FD1E38E4EB0095E05D /* Products */,
+				896042D5544518D72BB9E110 /* Pods */,
+				D7F70D809515E83545BF7624 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D41E93FD1E38E4EB0095E05D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D41E93FC1E38E4EB0095E05D /* AppEngine.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D41E93FE1E38E4EB0095E05D /* AppEngine */ = {
+			isa = PBXGroup;
+			children = (
+				D41E93FF1E38E4EB0095E05D /* AppEngine.h */,
+				D41E94001E38E4EB0095E05D /* Info.plist */,
+				D458DEAF1E4601FE00196998 /* Engine */,
+				D41E942D1E38E5600095E05D /* Library */,
+				D41E94691E38E5600095E05D /* Platform */,
+				D41E94C91E38E5610095E05D /* Resources */,
+			);
+			path = AppEngine;
+			sourceTree = "<group>";
+		};
+		D41E942D1E38E5600095E05D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D41E942E1E38E5600095E05D /* Duktape */,
+				D4B6F51C1E554C3300A1B6D6 /* Three */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		D41E942E1E38E5600095E05D /* Duktape */ = {
+			isa = PBXGroup;
+			children = (
+				D41E942F1E38E5600095E05D /* duk_config.h */,
+				D41E94301E38E5600095E05D /* duktape.c */,
+				D41E94311E38E5600095E05D /* duktape.h */,
+			);
+			path = Duktape;
+			sourceTree = "<group>";
+		};
+		D41E94691E38E5600095E05D /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				D41E946A1E38E5600095E05D /* AECanvasRenderingContext2DBean.cpp */,
+				D41E946B1E38E5600095E05D /* AECanvasRenderingContext2DBean.hpp */,
+				D41E946C1E38E5600095E05D /* AECanvasRenderingContext2DBean.mm */,
+				D4D0A4C31E485B0F00A02FFD /* AEHTMLAudioElementBean.cpp */,
+				D4D0A4C41E485B0F00A02FFD /* AEHTMLAudioElementBean.hpp */,
+				D4D0A4C51E485B0F00A02FFD /* AEHTMLAudioElementBean.mm */,
+				D41E946D1E38E5600095E05D /* AEHTMLImageElementBean.cpp */,
+				D41E946E1E38E5600095E05D /* AEHTMLImageElementBean.hpp */,
+				D41E946F1E38E5600095E05D /* AEHTMLImageElementBean.mm */,
+				D41E94791E38E5600095E05D /* AEHTMLVideoElementBean.cpp */,
+				D41E947A1E38E5600095E05D /* AEHTMLVideoElementBean.hpp */,
+				D41E947B1E38E5600095E05D /* AEHTMLVideoElementBean.mm */,
+				D41E94701E38E5600095E05D /* AEPlatform.cpp */,
+				D41E94711E38E5600095E05D /* AEPlatform.hpp */,
+				D41E94721E38E5600095E05D /* AEPlatform.mm */,
+				D41E94731E38E5600095E05D /* AESoundBean.cpp */,
+				D41E94741E38E5600095E05D /* AESoundBean.hpp */,
+				D41E94751E38E5600095E05D /* AESoundBean.mm */,
+				D41E94761E38E5600095E05D /* AESpeechSynthesisBean.cpp */,
+				D41E94771E38E5600095E05D /* AESpeechSynthesisBean.hpp */,
+				D41E94781E38E5600095E05D /* AESpeechSynthesisBean.mm */,
+				D41E947C1E38E5600095E05D /* AEView.cpp */,
+				D41E947D1E38E5600095E05D /* AEView.h */,
+				D41E947E1E38E5600095E05D /* AEView.mm */,
+				D41E947F1E38E5600095E05D /* AEVRDisplayBean.cpp */,
+				D41E94801E38E5600095E05D /* AEVRDisplayBean.hpp */,
+				D41E94811E38E5600095E05D /* AEVRDisplayBean.mm */,
+				D41E94821E38E5600095E05D /* AEWebSocketBean.cpp */,
+				D41E94831E38E5600095E05D /* AEWebSocketBean.hpp */,
+				D41E94841E38E5600095E05D /* AEWebSocketBean.mm */,
+				D41E94851E38E5600095E05D /* AEXMLHttpRequestBean.cpp */,
+				D41E94861E38E5600095E05D /* AEXMLHttpRequestBean.hpp */,
+				D41E94871E38E5600095E05D /* AEXMLHttpRequestBean.mm */,
+				D41E94881E38E5600095E05D /* Android */,
+				D458DEF71E46034800196998 /* iOS */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		D41E94881E38E5600095E05D /* Android */ = {
+			isa = PBXGroup;
+			children = (
+				D41E94891E38E5600095E05D /* AEJNI.cpp */,
+				D41E948A1E38E5600095E05D /* AEJNI.hpp */,
+			);
+			path = Android;
+			sourceTree = "<group>";
+		};
+		D41E94C91E38E5610095E05D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D41E94CA1E38E5610095E05D /* AppEngine.bundle */,
+				D4BA68EA1E3904EF00E2182F /* player.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D458DEAF1E4601FE00196998 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				D458DEB01E4601FE00196998 /* AEManager.cpp */,
+				D458DEB11E4601FE00196998 /* AEManager.hpp */,
+				D458DEB21E4601FE00196998 /* Core */,
+				D458DEC71E4601FE00196998 /* Math */,
+				D458DECE1E4601FE00196998 /* Utils */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		D458DEB21E4601FE00196998 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D458DEB31E4601FE00196998 /* AECanvasRenderingContext2D.cpp */,
+				D458DEB41E4601FE00196998 /* AECanvasRenderingContext2D.hpp */,
+				D4D0A4BF1E485B0100A02FFD /* AEHTMLAudioElement.cpp */,
+				D4D0A4C01E485B0100A02FFD /* AEHTMLAudioElement.hpp */,
+				D458DEB51E4601FE00196998 /* AEHTMLImageElement.cpp */,
+				D458DEB61E4601FE00196998 /* AEHTMLImageElement.hpp */,
+				D458DEB71E4601FE00196998 /* AEHTMLVideoElement.cpp */,
+				D458DEB81E4601FE00196998 /* AEHTMLVideoElement.hpp */,
+				D458DEB91E4601FE00196998 /* AEImageData.cpp */,
+				D458DEBA1E4601FE00196998 /* AEImageData.hpp */,
+				D458DEBB1E4601FE00196998 /* AESound.cpp */,
+				D458DEBC1E4601FE00196998 /* AESound.hpp */,
+				D458DEBD1E4601FE00196998 /* AESpeechSynthesis.cpp */,
+				D458DEBE1E4601FE00196998 /* AESpeechSynthesis.hpp */,
+				D458DEBF1E4601FE00196998 /* AEVRDisplay.cpp */,
+				D458DEC01E4601FE00196998 /* AEVRDisplay.hpp */,
+				D458DEC11E4601FE00196998 /* AEWebGLRenderingContext.cpp */,
+				D458DEC21E4601FE00196998 /* AEWebGLRenderingContext.hpp */,
+				D458DEC31E4601FE00196998 /* AEWebSocket.cpp */,
+				D458DEC41E4601FE00196998 /* AEWebSocket.hpp */,
+				D458DEC51E4601FE00196998 /* AEXMLHttpRequest.cpp */,
+				D458DEC61E4601FE00196998 /* AEXMLHttpRequest.hpp */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D458DEC71E4601FE00196998 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				D458DEC81E4601FE00196998 /* AELoop.cpp */,
+				D458DEC91E4601FE00196998 /* AELoop.hpp */,
+				D458DECA1E4601FE00196998 /* AEPool.cpp */,
+				D458DECB1E4601FE00196998 /* AEPool.hpp */,
+				D458DECC1E4601FE00196998 /* AETimer.cpp */,
+				D458DECD1E4601FE00196998 /* AETimer.hpp */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		D458DECE1E4601FE00196998 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D458DECF1E4601FE00196998 /* AEBase.cpp */,
+				D458DED01E4601FE00196998 /* AEBase.hpp */,
+				D4F34DCA1E5DD582004ED03C /* AEFloodFill.cpp */,
+				D4F34DCB1E5DD582004ED03C /* AEFloodFill.hpp */,
+				D458DED11E4601FE00196998 /* AEFormat.cpp */,
+				D458DED21E4601FE00196998 /* AEFormat.hpp */,
+				D458DED31E4601FE00196998 /* AEURL.cpp */,
+				D458DED41E4601FE00196998 /* AEURL.hpp */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D458DEF71E46034800196998 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D458DEF91E46034800196998 /* AEAudioEngine.hpp */,
+				D458DEFA1E46034800196998 /* AEAudioEngine.mm */,
+				D4D0A4C91E48605D00A02FFD /* AEHTMLAudioElementImpl.h */,
+				D4D0A4CA1E48605D00A02FFD /* AEHTMLAudioElementImpl.mm */,
+				D458DEFB1E46034800196998 /* AEHTMLVideoElementImpl.h */,
+				D458DEFC1E46034800196998 /* AEHTMLVideoElementImpl.mm */,
+				D458DEFD1E46034800196998 /* AEURLCache.h */,
+				D458DEFE1E46034800196998 /* AEURLCache.m */,
+				D458DEFF1E46034800196998 /* AEVRDisplayImpl.hpp */,
+				D458DF001E46034800196998 /* AEVRDisplayImpl.mm */,
+				D458DF011E46034800196998 /* EAGL */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D458DF011E46034800196998 /* EAGL */ = {
+			isa = PBXGroup;
+			children = (
+				D458DF021E46034800196998 /* AEAGLContext.h */,
+				D458DF031E46034800196998 /* AEAGLContext.mm */,
+				D458DF041E46034800196998 /* AECameraTexture.h */,
+				D458DF051E46034800196998 /* AECameraTexture.mm */,
+				D458DF061E46034800196998 /* AEVideoTexture.h */,
+				D458DF071E46034800196998 /* AEVideoTexture.mm */,
+			);
+			path = EAGL;
+			sourceTree = "<group>";
+		};
+		D4B6F51C1E554C3300A1B6D6 /* Three */ = {
+			isa = PBXGroup;
+			children = (
+				D4B6F51D1E554C3300A1B6D6 /* AEEuler.cpp */,
+				D4B6F51E1E554C3300A1B6D6 /* AEEuler.hpp */,
+				D4B6F51F1E554C3300A1B6D6 /* AEMath.cpp */,
+				D4B6F5201E554C3300A1B6D6 /* AEMath.hpp */,
+				D4B6F5211E554C3300A1B6D6 /* AEMatrix3.cpp */,
+				D4B6F5221E554C3300A1B6D6 /* AEMatrix3.hpp */,
+				D4B6F5231E554C3300A1B6D6 /* AEMatrix4.cpp */,
+				D4B6F5241E554C3300A1B6D6 /* AEMatrix4.hpp */,
+				D4B6F5251E554C3300A1B6D6 /* AEQuaternion.cpp */,
+				D4B6F5261E554C3300A1B6D6 /* AEQuaternion.hpp */,
+				D4B6F5271E554C3300A1B6D6 /* AEVector3.cpp */,
+				D4B6F5281E554C3300A1B6D6 /* AEVector3.hpp */,
+				D4B6F5291E554C3300A1B6D6 /* AEVector4.cpp */,
+				D4B6F52A1E554C3300A1B6D6 /* AEVector4.hpp */,
+			);
+			path = Three;
+			sourceTree = "<group>";
+		};
+		D7F70D809515E83545BF7624 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4343E9B1E38E7F400CBC286 /* CoreMotion.framework */,
+				D4343E991E38E7DC00CBC286 /* CoreMedia.framework */,
+				D4343E971E38E7C500CBC286 /* OpenGLES.framework */,
+				D4343E951E38E7A600CBC286 /* CoreGraphics.framework */,
+				D4343E931E38E79800CBC286 /* AudioToolbox.framework */,
+				D4343E911E38E75900CBC286 /* OpenAL.framework */,
+				D4343E8F1E38E74A00CBC286 /* AVFoundation.framework */,
+				ADB7BDA4EC60A2C39D5FA609 /* libPods-AppEngine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D41E93F91E38E4EA0095E05D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41E95381E38E5610095E05D /* AEVRDisplayBean.hpp in Headers */,
+				D4D0A4C71E485B0F00A02FFD /* AEHTMLAudioElementBean.hpp in Headers */,
+				D4D0A4C21E485B0100A02FFD /* AEHTMLAudioElement.hpp in Headers */,
+				D458DED61E4601FE00196998 /* AEManager.hpp in Headers */,
+				D458DEDA1E4601FE00196998 /* AEHTMLImageElement.hpp in Headers */,
+				D458DEDC1E4601FE00196998 /* AEHTMLVideoElement.hpp in Headers */,
+				D41E95231E38E5610095E05D /* AECanvasRenderingContext2DBean.hpp in Headers */,
+				D458DEE81E4601FE00196998 /* AEWebSocket.hpp in Headers */,
+				D4F34DCD1E5DD582004ED03C /* AEFloodFill.hpp in Headers */,
+				D4B6F5321E554C3300A1B6D6 /* AEMatrix4.hpp in Headers */,
+				D458DEE21E4601FE00196998 /* AESpeechSynthesis.hpp in Headers */,
+				D458DF091E46034800196998 /* AEAudioEngine.hpp in Headers */,
+				D41E953B1E38E5610095E05D /* AEWebSocketBean.hpp in Headers */,
+				D4D0A4CB1E48605D00A02FFD /* AEHTMLAudioElementImpl.h in Headers */,
+				D458DF131E46034800196998 /* AECameraTexture.h in Headers */,
+				D4B6F5341E554C3300A1B6D6 /* AEQuaternion.hpp in Headers */,
+				D458DEF21E4601FE00196998 /* AEBase.hpp in Headers */,
+				D4B6F5381E554C3300A1B6D6 /* AEVector4.hpp in Headers */,
+				D41E94ED1E38E5610095E05D /* duk_config.h in Headers */,
+				D4B6F52E1E554C3300A1B6D6 /* AEMath.hpp in Headers */,
+				D458DEEE1E4601FE00196998 /* AEPool.hpp in Headers */,
+				D41E94EF1E38E5610095E05D /* duktape.h in Headers */,
+				D458DEEA1E4601FE00196998 /* AEXMLHttpRequest.hpp in Headers */,
+				D458DEF41E4601FE00196998 /* AEFormat.hpp in Headers */,
+				D41E952F1E38E5610095E05D /* AESpeechSynthesisBean.hpp in Headers */,
+				D41E952C1E38E5610095E05D /* AESoundBean.hpp in Headers */,
+				D458DEF61E4601FE00196998 /* AEURL.hpp in Headers */,
+				D458DF0B1E46034800196998 /* AEHTMLVideoElementImpl.h in Headers */,
+				D458DEE61E4601FE00196998 /* AEWebGLRenderingContext.hpp in Headers */,
+				D41E95291E38E5610095E05D /* AEPlatform.hpp in Headers */,
+				D458DEE01E4601FE00196998 /* AESound.hpp in Headers */,
+				D458DED81E4601FE00196998 /* AECanvasRenderingContext2D.hpp in Headers */,
+				D458DF151E46034800196998 /* AEVideoTexture.h in Headers */,
+				D4B6F5301E554C3300A1B6D6 /* AEMatrix3.hpp in Headers */,
+				D4B6F5361E554C3300A1B6D6 /* AEVector3.hpp in Headers */,
+				D458DEEC1E4601FE00196998 /* AELoop.hpp in Headers */,
+				D458DF111E46034800196998 /* AEAGLContext.h in Headers */,
+				D41E95351E38E5610095E05D /* AEView.h in Headers */,
+				D41E95261E38E5610095E05D /* AEHTMLImageElementBean.hpp in Headers */,
+				D41E953E1E38E5610095E05D /* AEXMLHttpRequestBean.hpp in Headers */,
+				D458DEF01E4601FE00196998 /* AETimer.hpp in Headers */,
+				D458DF0F1E46034800196998 /* AEVRDisplayImpl.hpp in Headers */,
+				D458DF0D1E46034800196998 /* AEURLCache.h in Headers */,
+				D458DEE41E4601FE00196998 /* AEVRDisplay.hpp in Headers */,
+				D41E94011E38E4EB0095E05D /* AppEngine.h in Headers */,
+				D4B6F52C1E554C3300A1B6D6 /* AEEuler.hpp in Headers */,
+				D41E95411E38E5610095E05D /* AEJNI.hpp in Headers */,
+				D41E95321E38E5610095E05D /* AEHTMLVideoElementBean.hpp in Headers */,
+				D458DEDE1E4601FE00196998 /* AEImageData.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D41E93FB1E38E4EA0095E05D /* AppEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D41E94041E38E4EB0095E05D /* Build configuration list for PBXNativeTarget "AppEngine" */;
+			buildPhases = (
+				BC0A5EB27861D379D70FAAF4 /* [CP] Check Pods Manifest.lock */,
+				D41E93F71E38E4EA0095E05D /* Sources */,
+				D41E93F81E38E4EA0095E05D /* Frameworks */,
+				D41E93F91E38E4EA0095E05D /* Headers */,
+				D41E93FA1E38E4EA0095E05D /* Resources */,
+				A64229A3A7C1CAD2AB1E173D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppEngine;
+			productName = AppEngine;
+			productReference = D41E93FC1E38E4EB0095E05D /* AppEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41E93F31E38E4EA0095E05D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = AppEngine;
+				TargetAttributes = {
+					D41E93FB1E38E4EA0095E05D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 32KZP98443;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D41E93F61E38E4EA0095E05D /* Build configuration list for PBXProject "AppEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D41E93F21E38E4EA0095E05D;
+			productRefGroup = D41E93FD1E38E4EB0095E05D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D41E93FB1E38E4EA0095E05D /* AppEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D41E93FA1E38E4EA0095E05D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BA68EB1E3904EF00E2182F /* player.bundle in Resources */,
+				D41E957B1E38E5610095E05D /* AppEngine.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A64229A3A7C1CAD2AB1E173D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppEngine/Pods-AppEngine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC0A5EB27861D379D70FAAF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D41E93F71E38E4EA0095E05D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41E95301E38E5610095E05D /* AESpeechSynthesisBean.mm in Sources */,
+				D41E95361E38E5610095E05D /* AEView.mm in Sources */,
+				D458DF121E46034800196998 /* AEAGLContext.mm in Sources */,
+				D458DEED1E4601FE00196998 /* AEPool.cpp in Sources */,
+				D458DEEF1E4601FE00196998 /* AETimer.cpp in Sources */,
+				D41E952A1E38E5610095E05D /* AEPlatform.mm in Sources */,
+				D41E95271E38E5610095E05D /* AEHTMLImageElementBean.mm in Sources */,
+				D4D0A4CC1E48605D00A02FFD /* AEHTMLAudioElementImpl.mm in Sources */,
+				D4B6F52F1E554C3300A1B6D6 /* AEMatrix3.cpp in Sources */,
+				D458DEE51E4601FE00196998 /* AEWebGLRenderingContext.cpp in Sources */,
+				D41E953D1E38E5610095E05D /* AEXMLHttpRequestBean.cpp in Sources */,
+				D41E95251E38E5610095E05D /* AEHTMLImageElementBean.cpp in Sources */,
+				D458DF141E46034800196998 /* AECameraTexture.mm in Sources */,
+				D4B6F5371E554C3300A1B6D6 /* AEVector4.cpp in Sources */,
+				D4D0A4C81E485B0F00A02FFD /* AEHTMLAudioElementBean.mm in Sources */,
+				D458DEDF1E4601FE00196998 /* AESound.cpp in Sources */,
+				D458DEDD1E4601FE00196998 /* AEImageData.cpp in Sources */,
+				D4B6F5331E554C3300A1B6D6 /* AEQuaternion.cpp in Sources */,
+				D41E953F1E38E5610095E05D /* AEXMLHttpRequestBean.mm in Sources */,
+				D41E95331E38E5610095E05D /* AEHTMLVideoElementBean.mm in Sources */,
+				D458DEF11E4601FE00196998 /* AEBase.cpp in Sources */,
+				D458DEE71E4601FE00196998 /* AEWebSocket.cpp in Sources */,
+				D41E95221E38E5610095E05D /* AECanvasRenderingContext2DBean.cpp in Sources */,
+				D4D0A4C11E485B0100A02FFD /* AEHTMLAudioElement.cpp in Sources */,
+				D458DEF31E4601FE00196998 /* AEFormat.cpp in Sources */,
+				D458DEE31E4601FE00196998 /* AEVRDisplay.cpp in Sources */,
+				D41E952D1E38E5610095E05D /* AESoundBean.mm in Sources */,
+				D458DF0A1E46034800196998 /* AEAudioEngine.mm in Sources */,
+				D41E95371E38E5610095E05D /* AEVRDisplayBean.cpp in Sources */,
+				D458DF101E46034800196998 /* AEVRDisplayImpl.mm in Sources */,
+				D4B6F52D1E554C3300A1B6D6 /* AEMath.cpp in Sources */,
+				D4F34DCC1E5DD582004ED03C /* AEFloodFill.cpp in Sources */,
+				D4B6F5311E554C3300A1B6D6 /* AEMatrix4.cpp in Sources */,
+				D458DEDB1E4601FE00196998 /* AEHTMLVideoElement.cpp in Sources */,
+				D41E95391E38E5610095E05D /* AEVRDisplayBean.mm in Sources */,
+				D41E95401E38E5610095E05D /* AEJNI.cpp in Sources */,
+				D41E95241E38E5610095E05D /* AECanvasRenderingContext2DBean.mm in Sources */,
+				D458DEF51E4601FE00196998 /* AEURL.cpp in Sources */,
+				D458DF161E46034800196998 /* AEVideoTexture.mm in Sources */,
+				D41E95311E38E5610095E05D /* AEHTMLVideoElementBean.cpp in Sources */,
+				D458DED51E4601FE00196998 /* AEManager.cpp in Sources */,
+				D4B6F52B1E554C3300A1B6D6 /* AEEuler.cpp in Sources */,
+				D41E953A1E38E5610095E05D /* AEWebSocketBean.cpp in Sources */,
+				D458DEEB1E4601FE00196998 /* AELoop.cpp in Sources */,
+				D458DF0C1E46034800196998 /* AEHTMLVideoElementImpl.mm in Sources */,
+				D41E952B1E38E5610095E05D /* AESoundBean.cpp in Sources */,
+				D458DF0E1E46034800196998 /* AEURLCache.m in Sources */,
+				D458DEE91E4601FE00196998 /* AEXMLHttpRequest.cpp in Sources */,
+				D458DED91E4601FE00196998 /* AEHTMLImageElement.cpp in Sources */,
+				D41E952E1E38E5610095E05D /* AESpeechSynthesisBean.cpp in Sources */,
+				D458DED71E4601FE00196998 /* AECanvasRenderingContext2D.cpp in Sources */,
+				D41E94EE1E38E5610095E05D /* duktape.c in Sources */,
+				D4B6F5351E554C3300A1B6D6 /* AEVector3.cpp in Sources */,
+				D41E953C1E38E5610095E05D /* AEWebSocketBean.mm in Sources */,
+				D41E95281E38E5610095E05D /* AEPlatform.cpp in Sources */,
+				D458DEE11E4601FE00196998 /* AESpeechSynthesis.cpp in Sources */,
+				D4D0A4C61E485B0F00A02FFD /* AEHTMLAudioElementBean.cpp in Sources */,
+				D41E95341E38E5610095E05D /* AEView.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D41E94021E38E4EB0095E05D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D41E94031E38E4EB0095E05D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D41E94051E38E4EB0095E05D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3A6DB2FE80424128175222E /* Pods-AppEngine.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 32KZP98443;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AppEngine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = app.engine.AppEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D41E94061E38E4EB0095E05D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C0797FDA2A2136E082C006 /* Pods-AppEngine.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 32KZP98443;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AppEngine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = app.engine.AppEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D41E93F61E38E4EA0095E05D /* Build configuration list for PBXProject "AppEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41E94021E38E4EB0095E05D /* Debug */,
+				D41E94031E38E4EB0095E05D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D41E94041E38E4EB0095E05D /* Build configuration list for PBXNativeTarget "AppEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41E94051E38E4EB0095E05D /* Debug */,
+				D41E94061E38E4EB0095E05D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41E93F31E38E4EA0095E05D /* Project object */;
+}
